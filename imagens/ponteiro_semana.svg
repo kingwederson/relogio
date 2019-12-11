@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="150"
+   height="150"
+   viewBox="0 0 39.6875 39.687501"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="ponteiro_semana.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="112.38005"
+     inkscape:cy="243.37866"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="roda"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257.31248)"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Rockwell;-inkscape-font-specification:Rockwell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="21.515198"
+       y="292.72366"
+       id="text1047"><tspan
+         sodipodi:role="line"
+         id="tspan1045"
+         x="21.515198"
+         y="302.05606"
+         style="stroke-width:0.26458332" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1072"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Rockwell;-inkscape-font-specification:Rockwell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,0,244.08332)"><flowRegion
+         id="flowRegion1074"><rect
+           id="rect1076"
+           width="264.65997"
+           height="249.00261"
+           x="-6.0609155"
+           y="-16.172646" /></flowRegion><flowPara
+         id="flowPara1078" /></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="indentificador"
+     style="display:inline"
+     transform="translate(0,-13.229166)">
+    <path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:3.09165358;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 74.490234 1.5664062 A 73.494244 73.476098 20.292118 0 0 54.451172 4.4765625 A 73.494244 73.476098 20.292118 0 0 16.833984 30.251953 L 36.853516 44.390625 A 48.996045 48.983951 20.291295 0 1 61.304688 27.992188 A 48.996045 48.983951 20.291295 0 1 75.896484 26.050781 A 48.996045 48.983951 20.291295 0 1 112.5293 43.615234 L 130.78906 27.291016 A 73.494244 73.476098 20.292118 0 0 74.490234 1.5664062 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,13.229166)"
+       id="path2069" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.81800002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2072"
+       sodipodi:sides="3"
+       sodipodi:cx="19.564413"
+       sodipodi:cy="21.873441"
+       sodipodi:r1="3.4083414"
+       sodipodi:r2="1.7041708"
+       sodipodi:arg1="-1.551191"
+       sodipodi:arg2="-0.50399344"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 19.63123,18.465755 1.425459,2.584698 1.425458,2.584697 -2.951143,-0.05786 -2.951143,-0.05787 1.525685,-2.526832 z"
+       inkscape:transform-center-x="0.033408915"
+       inkscape:transform-center-y="-0.82298899" />
+  </g>
+</svg>

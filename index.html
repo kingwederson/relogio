@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+   <meta author="Wederson Geovane de Paula">
+   <meta charset="UFT-8">
+   <head>
+      <title>Hora do Sistema 5.0</title>
+      <style>
+         body {
+         color: white;
+        font-family: Arial;
+        font-size: 32pt;
+        background-color:#1a1a1a;
+        margin: auto;
+        width: 741px;
+        }
+        input[type="range"] {
+           width:750px;
+           height: 70px;
+        }
+        span {
+           
+        }
+      </style>
+   </head>
+
+   <body>
+      <div style='position:relative; top:0px; left:0px;'><img src="imagens/fundo.svg">
+         <div name="diajuliano" style='position:absolute; top:496px; left:270px;'>
+            <div name="roda1" style='position:absolute; top:0px; left:113px;'><img id="roda1" src="imagens/juliano_roda.svg"  style="transform:rotate(0deg)"></div>
+            <div name="roda2" style='position:absolute; top:0px; left:94px;'><img id="roda2" src="imagens/juliano_roda.svg" style="transform:rotate(0deg)"></div>
+            <div name="roda3" style='position:absolute; top:0px; left:76px;'><img id="roda3" src="imagens/juliano_roda.svg" style="transform:rotate(0deg)"></div>
+            <div name="roda4" style='position:absolute; top:0px; left:57px;'><img id="roda4" src="imagens/juliano_roda.svg" style="transform:rotate(0deg)"></div>
+            <div name="roda5" style='position:absolute; top:0px; left:38px;'><img id="roda5" src="imagens/juliano_roda.svg" style="transform:rotate(0deg)"></div>
+            <div name="roda6" style='position:absolute; top:0px; left:19px;'><img id="roda6" src="imagens/juliano_roda.svg" style="transform:rotate(0deg)"></div>
+            <div name="roda7" style='position:absolute; top:0px; left:0px;'><img id="roda7" src="imagens/juliano_roda.svg" style="transform:rotate(0deg)"></div>
+         </div>
+         <div style='position:absolute; top:250px; left:430px;'><img id="rodasemana" src="imagens/roda_semana.svg" alt=""></div>
+         <div style='position:absolute; top:0px; left:0px;'><img id="relogio" src="imagens/relogio_custom.svg">
+            <div name="adesivo-juliano" style='position:absolute; top:521px; left:305px;'><img id="janela" src="imagens/adesivo-juliano.svg"></div></div>
+         <div mane="fasedalua" style='position:absolute; top:280px; left:140px;'><img src="imagens/adesivo-lua.svg">
+            <div style='position:absolute; top:0px; left:0px;'><img id="ponteirolua" src="imagens/ponteiro_lua.svg" style="transform:rotate(0deg)"></div>
+         </div>
+         <div name="datadoano" style='position:absolute; top:280px; left:405px;'><img src="imagens/adesivo-mes.svg">
+            <div style='position:absolute; top:0px; left:0px;'><img id="ponteiromes" src="imagens/ponteiro_mes.svg" style="transform:rotate(0deg)"></div>
+            <div style='position:absolute; top:0px; left:0px;'><img id="ponteirodia" src="imagens/ponteiro_dia.svg" style="transform:rotate(0deg)"></div>
+         </div>
+         <div name="horas" style='position:absolute; top:0px; left:0px;'><img id="ponteirohoras" src="imagens/ponteiro_horas.svg" style="transform:rotate(0deg)"></div>
+         <div name="minutos" style='position:absolute; top:0px; left:0px;'><img id="ponteirominutos" src="imagens/ponteiro_minutos.svg" style="transform:rotate(0deg)"></div>
+         <div name="segundos" style='position:absolute; top:0px; left:0px;'><img id="ponteirosegundos" src="imagens/ponteiro_segundos.svg" style="transform:rotate(0deg)"></div>
+      </div>
+      <p>Datas válidas desde 01 de março de 1972 a 28 de fevereiro de 2100.</p>
+      <p>Fases da Lua exatas para fuso horário UTC-03:00.</p>
+      <p>Hora do Sistema&trade; v. 5.0.</p>
+      <p>&copy;Wederson Geovane de Paula, 2019.</p>
+        <script>
+           setInterval(
+           function relogio(){
+              //calculo
+            var inicio= Number(new Date("March 01, 1972 00:00:00"))
+            var agora = Number(new Date())
+            var tempo = parseInt((agora-inicio)/1000)
+            var datadecontagem = tempo/86400
+            var dia4anos = datadecontagem%1461
+            var era = parseInt(datadecontagem/1461)
+            var diadoano = (dia4anos)%365
+            var lua = ((tempo+1305120)/86400)%29.530588
+            var semanal = (datadecontagem%7)
+            var hora = (diadoano%1)*24
+            var minuto = (hora%1)*60
+            var segundo = (minuto%1)*60
+            var diams
+               if (dia4anos>1460){diams = 29}else
+               if (diadoano>337){diams = diadoano-337}else
+               if (diadoano>306){diams = diadoano-306}else
+               if (diadoano>275){diams = diadoano-275}else
+               if (diadoano>245){diams = diadoano-245}else
+               if (diadoano>214){diams = diadoano-214}else
+               if (diadoano>184){diams = diadoano-184}else
+               if (diadoano>153){diams = diadoano-153}else
+               if (diadoano>122){diams = diadoano-122}else
+               if (diadoano>92){diams = diadoano-92}else
+               if (diadoano>61){diams = diadoano-61}else
+               if (diadoano>31){diams = diadoano-31}else
+               {diams = diadoano}
+            var decidia = 24413775+tempo/(8640)
+            var prototempo0 = decidia
+            var prototempo1 = parseInt(decidia/10)
+            var prototempo2 = parseInt(decidia/10**2)
+            var prototempo3 = parseInt(decidia/10**3)
+            var prototempo4 = parseInt(decidia/10**4)
+            var prototempo5 = parseInt(decidia/10**5)
+            var prototempo6 = parseInt(decidia/10**6)
+            var prototempo7 = parseInt(decidia/10**7)
+            var restotempo0
+            if((prototempo0%10)<9){restotempo0 = 0}else{restotempo0 = 10-(prototempo0+1)%10}
+            var restotempo1
+            if((prototempo1%100)<99){restotempo1 = 0}else{restotempo1 = 10-(prototempo0+1)%10}
+            var restotempo2
+            if((prototempo1%1000)<999){restotempo2 = 0}else{restotempo2 = 10-(prototempo0+1)%10}
+            var restotempo3
+            if((prototempo1%10000)<9999){restotempo3 = 0}else{restotempo3 = 10-(prototempo0+1)%10}
+            var restotempo4
+            if((prototempo1%100000)<99999){restotempo4 = 0}else{restotempo4 = 10-(prototempo0+1)%10}
+            var restotempo5
+            if((prototempo1%1000000)<999999){restotempo5 = 0}else{restotempo5 = 10-(prototempo0+1)%10}
+            var restotempo6
+            if((prototempo1%10000000)<9999999){restotempo6 = 0}else{restotempo6 = 10-(prototempo0+1)%10}
+            var tempo1 = prototempo1-restotempo0
+            var tempo2 = prototempo2-restotempo1
+            var tempo3 = prototempo3-restotempo2
+            var tempo4 = prototempo4-restotempo3
+            var tempo5 = prototempo5-restotempo4
+            var tempo6 = prototempo6-restotempo5
+            var tempo7 = prototempo7-restotempo6
+            //angulo
+            var angulomes = 360*diadoano/365
+            var angulolua = 12.1907494697*lua
+            var angulodia = 360*diams/31
+            var angulosemanal = -51.4285714286*semanal
+            var angulohora = 30*hora
+            var angulominuto = 6*minuto
+            var angulosegundo = 6*segundo
+            var anguloroda1 = -36*tempo1
+            var anguloroda2 = -36*tempo2
+            var anguloroda3 = -36*tempo3
+            var anguloroda4 = -36*tempo4
+            var anguloroda5 = -36*tempo5
+            var anguloroda6 = -36*tempo6
+            var anguloroda7 = -36*tempo7
+            /*mostragem
+            mostrartempo.innerText = parseInt(tempo)
+            mostrardatadecontagem.innerText = datadecontagem.toFixed(6)
+            mostrardia4anos.innerText = dia4anos.toFixed(6)
+            mostrarera.innerText = era.toFixed(6)
+            mostrardiadoano.innerText = diadoano.toFixed(6)
+            mostrarlua.innerText = lua.toFixed(6)
+            mostrarhora.innerText = hora.toFixed(6)
+            mostrarminuto.innerText = minuto.toFixed(6)
+            mostrarsegundo.innerText = segundo.toFixed(6)
+            dataUTC.innerText = fusohorario.toFixed(2) */
+            //engrenagem
+            ponteirodia.style.webkitTransform = 'rotate('+angulodia+'deg)'
+            ponteiromes.style.webkitTransform = 'rotate('+angulomes+'deg)'
+            ponteirolua.style.webkitTransform = 'rotate('+angulolua+'deg)'
+            rodasemana.style.webkitTransform = 'rotate('+angulosemanal+'deg)'
+            ponteirohoras.style.webkitTransform = 'rotate('+angulohora+'deg)'
+            ponteirominutos.style.webkitTransform = 'rotate('+angulominuto+'deg)'
+            ponteirosegundos.style.webkitTransform = 'rotate('+angulosegundo+'deg)'
+            roda1.style.webkitTransform = 'rotate('+anguloroda1+'deg)'
+            roda2.style.webkitTransform = 'rotate('+anguloroda2+'deg)'
+            roda3.style.webkitTransform = 'rotate('+anguloroda3+'deg)'
+            roda4.style.webkitTransform = 'rotate('+anguloroda4+'deg)'
+            roda5.style.webkitTransform = 'rotate('+anguloroda5+'deg)'
+            roda6.style.webkitTransform = 'rotate('+anguloroda6+'deg)'
+            roda7.style.webkitTransform = 'rotate('+anguloroda7+'deg)'
+               },20)
+      </script>
+   </body>
+</html>
